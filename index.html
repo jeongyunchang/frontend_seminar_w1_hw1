@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="reset.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <title>장정윤</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>About Me</h1>
+  <div class="container">
+    <div class="circle" data-info="2006.05.05." data-img="cake.png">
+      <img src="cake.png" alt="생일">
+    </div>
+    <div class="circle" data-info="컴퓨터공학부<br>2025-10113" data-img="school.png">
+      <img src="school.png" alt="학과">
+    </div>
+    <div class="circle" data-info="MBTI : ESTJ" data-img="personality.png">
+      <img src="personality.png" alt="MBTI">
+    </div>
+  </div>
+
+  <h1>TMI</h1>
+  <div class = "tmi-box">
+    안녕하세요, 저는 컴퓨터공학부 25학번 장정윤입니다. <br> 개강한지 얼마 되지 않아 여러모로 일정이 많고 그러다 보니 시간에 쫓겨 첫 번째 과제를 수행하고 있습니다. <br> 요즘 날씨가 아침밤으로 너무 풀려서 기분이 좋으네요.<br>입학한 지 두 학기밖에 되지 않았지만, 이번 학기는 새롭게 갓생을 살아보겠다는 의지로 와플 스튜디오 동아리에 가입하여 프론트엔드 세미나를 수강하고 있습니다. 생각보다 어려움이 많은 작업이라는 것을 깨닫게 되는 시점이네요.<br>tmi로는 여행 가는 것을 좋아하여 여행 중앙 동아리 괴나리에 가입해 있습니다.<br>이곳에서 앞으로 많은 것을 배워 나갈 수 있는 기회가 되었으면 좋겠습니다. <br> 감사합니다. 앞으로 잘 부탁 드리겠습니다.
+  </div>
+  <div class="tmi">
+    <h2>방명록</h2>
+    <textarea id="tmi-input" placeholder="초라하지만 제 소개가 어땠나요?"></textarea>
+    <button id="save-tmi">저장</button>
+    <div id="tmi-list"></div>
+  </div>
+
+  <div class="reaction">
+    <button id="like-btn">👍 <span id="like-count">0</span></button>
+  </div>
+
   <script src="index.js"></script>
+</body>
 </html>
